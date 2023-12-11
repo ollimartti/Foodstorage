@@ -1,0 +1,117 @@
+
+
+
+
+
+body {
+  font-family: "Lato", sans-serif;
+  color: #ffffff;
+  background-color: #186F65;
+  min-height: 100vh;
+  padding-top: 20px;
+  width: 1000px;
+  margin: auto;
+  width: 70%;
+  padding: 10px;
+}
+
+.container {
+  justify-content: center;
+  width: 800px;
+  min-height: 20px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+tr:nth-child(odd) {
+    background-color: #e7e7e7;
+  }
+
+table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    background-color: white;
+    color: black;    
+  }
+
+.scroll-thead{
+    width: 100%;
+    display: inline-table;
+  }
+
+.scroll-tbody-y{
+    display: block;
+    overflow-y: scroll;
+  }
+
+.table-body{
+    height: 500px;
+  }
+
+th {
+    background-color: white;
+    border-bottom-style: solid;
+  }
+
+  th {
+    text-align: left;
+    padding: 2px;
+  }
+
+td {
+    text-align: left;
+    padding: 2px;
+    padding-right: 10px;
+  }
+
+input[type=submit] {
+    background-color: #04AA6D;
+    border: none;
+    color: #ffffff;
+    padding: 5px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+input[type=submit]:hover {
+    background-color: #ffffff;
+    color: #04AA6D;
+  }
+
+input[ id="ean_code"] {
+    width: 110px;
+  }
+
+input[ id="prod_item"] {
+    width: 450px;
+  }
+
+input[ id="product_group"] {
+    width: 110px;
+  }
+
+  input[ id="id"] {
+    width: 40px;
+  }

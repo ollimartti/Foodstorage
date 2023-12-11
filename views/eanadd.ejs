@@ -1,0 +1,79 @@
+<%- include("partials/header.ejs") %>
+
+<body onload="loadEanData()">
+
+
+    <br>
+    <b>EAN koodin lisäys</b><br>
+    <div>
+        <form action="/ean" method="POST">
+            <div>
+                <label >Syötä:</label>
+                <input type="text" id="ean_code" name="ean_code" placeholder="EAN koodi"/>
+                <input type="text" id="product_name" name="product_name" maxlength="60" placeholder="Tuotenimi"/>
+                <input list="groups" id="product_group" name="product_group" placeholder="Tuoteryhmä"/>
+                    <datalist id="groups">
+                        <option value="tuoretavara"></option>
+                        <option value="tölkit ja pullot"></option>
+                        <option value="säilyke"></option>
+                        <option value="kuiva-aineet"></option>
+                        <option value="muut"></option>
+                    </datalist>
+           
+                <input type="submit" value="Tallenna"/>
+            </div>           
+        </form>
+    </div>
+
+    <p id="tuotenimi"></p> 
+
+    <!-- POISTO -->
+
+<!--     <b>Tuoterivin poisto</b><br />
+    <div>
+        <form action="/del" method="POST">
+            <div>
+                <label >Rivin ID:</label>
+                <input  type="text" id="id" name="id"/>
+
+                <input type="submit" value="Poista"/>
+            </div>           
+        </form>
+    </div> -->
+
+    
+
+<hr color="white"/>
+<br />
+    <div>
+        <b>Tuotteet</b>
+
+        <input type="text" id="myInput" onkeyup="dynamicCellSearch()" placeholder="Etsi tuotetta...">
+        <br> <br>
+
+
+        <table id="myTable">
+            <thead class="scroll-thead">
+                <tr class="header">
+                    <th width="110px">ID</th>
+                    <th width="450px">Tuote</th>
+                    <th width="100px">Ryhmä</th>
+                </tr>
+            </thead>
+            <tbody id="data-output" class="scroll-tbody-y table-body">
+            </tbody>            
+        </table>
+    </div>
+</br>
+<br>
+<div>
+    <button onclick="location.reload();">Päivitä sivu</button>
+    <button onclick="loadEanData()">Päivitä taulu</button>
+</div>
+
+
+
+<script src="script.js"></script> 
+</body>
+
+<%- include("partials/footer.ejs") %>

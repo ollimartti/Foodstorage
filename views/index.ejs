@@ -1,0 +1,34 @@
+
+<%- include("partials/header.ejs") %>
+<body onload="loadTableData()">
+
+    <!-- Start page -->
+    <div>
+        <b>Tuotteet</b>
+
+        <input type="text" id="myInput" onkeyup="dynamicCellSearch()" placeholder="Etsi tuotetta...">
+        
+
+        <p id="todayis"></p>
+
+        <table id="myTable">
+            <thead class="scroll-thead">
+                <tr class="header">
+                    <th width="26px">ID</th>
+                    <th width="450px">Tuote</th>
+                    <th width="90px">Ryhmä</th>
+                    <th width="100px">Päiväys</th>
+                </tr>
+            </thead>
+            <tbody id="data-output" class="scroll-tbody-y table-body">
+            </tbody>            
+        </table>
+    </div>
+</br>
+
+</br>
+
+</body>
+<script src="script.js"></script>
+
+<%- include("partials/footer.ejs") %>
