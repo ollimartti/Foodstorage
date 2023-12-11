@@ -1,6 +1,8 @@
 # Foodstorage
 My food storage project
 
+Javascript project 
+
 The purpose of the food storage is to store food products in its own table based on the ean code. 
 With the help of the ean code, you can save the food that is coming and going out at home, 
 the best of which has been taken before the date, which can be used to avoid food waste.
